@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="MOVE TO WHICH POSITION?"
+        android:textSize="23dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/subtract"
+            android:layout_marginRight="30dp"
+            android:id="@+id/cnt_down"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:id="@+id/cnt"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/cnt_up"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="ATTACK"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/red_btn"
+            android:id="@+id/btn_toAttack"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="DEFENCE"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_btn"
+            android:id="@+id/btn_toDefence"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:text="X"
+            android:textSize="15dp"
+            android:background="@drawable/gray_btn_10"
+            android:id="@+id/btn_cancel"/>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>

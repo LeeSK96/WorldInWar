@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:background="#451D1D">
+
+      <Button
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="@drawable/coin"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="100"
+          android:textSize="20dp"
+          android:textColor="#FFD600"
+          android:id="@+id/user_money"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="$"
+          android:textSize="20dp"
+          android:textColor="#FFD600"/>
+
+   </LinearLayout>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/unitListView"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="100dp"
+          android:dividerHeight="10dp"/>
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@drawable/inventory"
+                android:layout_weight="1"
+                android:id="@+id/btn_invent"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="88dp"
+                android:background="#424d4d"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@drawable/shop_3_selected"
+                android:layout_weight="1"
+                android:id="@+id/btn_market"/>
+
+
+         </LinearLayout>
+
+         <!-- 홈 버튼 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_gravity="bottom"
+             android:gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/map"
+                android:id="@+id/btn_map"/>
+
+         </LinearLayout>
+
+      </FrameLayout>
+
+   </FrameLayout>
+
+</LinearLayout>

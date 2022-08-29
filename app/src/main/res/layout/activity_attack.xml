@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttackActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="top"
+                android:background="@drawable/atk_blue_user"
+                android:gravity="center"
+                android:paddingBottom="50dp">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/owner_color"
+                    android:layout_margin="10dp"
+                    android:id="@+id/owner_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER_COLOR|NICKNAME"
+                    android:textSize="20dp"
+                    android:id="@+id/owner_nickname"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/atk_blue_user"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="   ATK :\n   DEF :"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="100\n300"
+                    android:textSize="30dp"
+                    android:textColor="#f55"
+                    android:id="@+id/owner_atk_def"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 중앙 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="FIGHT"
+            android:background="@drawable/red_btn"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/atk_btn"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:background="@drawable/gray_btn_10"
+            android:id="@+id/cancel_btn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/atk_green_user"
+                android:gravity="center"
+                android:paddingTop="50dp">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/user_color"
+                    android:layout_margin="10dp"
+                    android:id="@+id/user_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER_COLOR|NICKNAME"
+                    android:textSize="20dp"
+                    android:id="@+id/user_nickname"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/atk_green_user"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="   ATK :\n   DEF :"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="100\n300"
+                    android:textSize="30dp"
+                    android:textColor="#f55"
+                    android:id="@+id/user_atk_def"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
